@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Gustavo · Desenvolvedor</title>
+      <meta name="description" content="Site pessoal de Gustavo, desenvolvedor de software — projetos, stack e contato.">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,560;9..144,650&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="src/styles.css">
+
+      <!-- Google Tag gtag.js -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-YDKWMPGMCD"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YDKWMPGMCD');
+      </script>
+
+</head>
+<body data-theme="dark">
+
+  <header class="site-header">
+    <a href="#top" class="logo"><span class="logo-dot">.</span>dev</a>
+
+    <nav class="site-nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#stack">Stack</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro e escuro" aria-pressed="false">
+      <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+        <circle cx="12" cy="12" r="4.2"/>
+        <path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/>
+      </svg>
+      <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+        <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/>
+      </svg>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Hello World.</h1>
+        <p class="hero-lead">
+          Me chamo Gabriel, sou estudante de Ciência da Computação. Transito entre aplicações
+          web de ponta a ponta e projetos de baixo nível em C/C++.
+        </p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn btn-primary">Projetos</a>
+          <a href="#contato" class="btn btn-ghost">Contato</a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-hidden="true">
+        <div class="terminal-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="terminal-title">gabriel@root — bash</span>
+        </div>
+        <div class="terminal-body" id="terminalBody"></div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <div class="section-head">
+        <h2>Sobre</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-mark" aria-hidden="true">
+        </div>
+        <div class="about-copy">
+          <p>
+            Foco em Algoritmos e Estruturas de Dados e Arquitetura de Computadores.
+          </p>
+          <p>
+            Alterno entre dois mundos: Aplicações Web e SaaS com Integrações
+            de IA de um lado, e Sistemas de Baixo Nível e Software Embarcado ( C/C++, eletrônica, IoT ) do outro.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section">
+      <div class="section-head">
+        <h2>Tech stack</h2>
+      </div>
+
+      <div class="stack-groups">
+        <div class="stack-group">
+          <h3>Linguagens</h3>
+          <div class="chips">
+            <span class="chip">C</span>
+            <span class="chip">C++</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">TypeScript</span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <h3>Web &amp; SaaS</h3>
+          <div class="chips">
+            <span class="chip">NextJS</span>
+            <span class="chip">NodeJS</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Redis</span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <h3>Sistemas &amp; IoT</h3>
+          <div class="chips">
+            <span class="chip">Eletrônica</span>
+            <span class="chip">Linux</span>
+            <span class="chip">Arduino</span>
+            <span class="chip">ESP32</span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <h3>Ferramentas</h3>
+          <div class="chips">
+            <span class="chip">Git</span>
+            <span class="chip">Docker</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <div class="section-head">
+        <h2>Projetos</h2>
+      </div>
+
+      <ul class="project-list">
+        <li class="project-row">
+          <div class="project-info">
+            <h3>Redis Clone</h3>
+            <p>Um clone do Redis baseado em memória, utilizando HashMap e o modelo chave:valor para persistência.</p>
+            <div class="chips chips-mini">
+              <span class="chip">Typescript</span>
+              <span class="chip">Orientação à Objetos</span>
+              <span class="chip">Estruturas de Dados</span>
+            </div>
+          </div>
+          <a href="#" class="project-link">Ver Repositório</a>
+        </li>
+
+        <li class="project-row">
+          <div class="project-info">
+            <h3>Lynq App</h3>
+            <p>Estou desenvolvendo uma aplicação web para criação de tarefas, notas e reminders baseado em IA para processamento natural de linguagem e tooling.</p>
+            <div class="chips chips-mini">
+              <span class="chip">NodeJS</span>
+              <span class="chip">Typescript</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Redis</span>
+            </div>
+          </div>
+          <a href="#" class="project-link">Ver Repositório</a>
+        </li>
+
+        <li class="project-row">
+          <div class="project-info">
+            <h3>Website Pessoal</h3>
+            <p>Landing page pessoal em HTML, CSS e JavaScript puros, com alternância de tema
+              claro e escuro persistida localmente.</p>
+            <div class="chips chips-mini">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+            </div>
+          </div>
+          <a href="#" class="project-link">Ver Repositório</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section section-contact">
+      <div class="section-head">
+        <h2>Contato</h2>
+      </div>
+
+      <div class="contact-terminal">
+        <p class="contact-line"><span class="prompt">$</span> contato --email</p>
+        <p class="contact-value"><a href="mailto:gabriel@example.com">gabriel@email.com</a></p>
+
+        <p class="contact-line"><span class="prompt">$</span> contato --redes</p>
+        <p class="contact-value contact-socials">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+<script src="src/script.js"></script>
+</body>
+</html>
